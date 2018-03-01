@@ -1,7 +1,7 @@
 # BRICK.JS
 
 <p align="center">
-![](https://media.giphy.com/media/zKuYMf3dcODU4/giphy.gif)
+![cat](https://media.giphy.com/media/zKuYMf3dcODU4/giphy.gif)
 </p>
 
 > ⚠️ This project is under development, all of this things can be removed, updated or added.
@@ -100,5 +100,5 @@ Help me maintain the libraries, projects, sub projects, modules and bricks with 
 Thanks!
 
 <p align="center">
-![](https://media.giphy.com/media/1VrOcCmld1a92/giphy.gif)
+![cat](https://media.giphy.com/media/1VrOcCmld1a92/giphy.gif)
 </p>
