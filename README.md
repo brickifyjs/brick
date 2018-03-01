@@ -137,6 +137,23 @@ foo(..., middleware('pack', function(){}));
 
 👉 __Using EcmaScript 6__
 
+## Extend the core
+
+👉 __Using EcmaScript 5__
+
+// Extending the constructor
+Brick.baz = function() {};
+Brick.qux = {};
+Brick.quux = true;
+
+// Extending the constructor prototype
+Brick.prototype.baz = function() {};
+Brick.prototype.qux = {};
+Brick.prototype.quux = true;
+
+👉 __Using EcmaScript 6__
+
+
 # 💻 API
 
 😿 Work in progress.
