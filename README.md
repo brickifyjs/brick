@@ -13,6 +13,7 @@
 * Built-in flow and life cycle (root repack/sibling repack, manual repack/auto repack, top to down/down to top)
 * Built-in methods and properties
 * Built-in conversion system
+* Built-in package, build, bundler system
 
 Easily extensible and overridable
 
