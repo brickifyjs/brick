@@ -155,6 +155,14 @@ Brick.prototype.quux = true;
 
 👉 __Using EcmaScript 6__
 
+## Extend a Brick
+
+## Override a Brick
+
+## Retreive a Brick
+
+## Create/Instantiate a new Brick
+
 
 # 💻 API
 
