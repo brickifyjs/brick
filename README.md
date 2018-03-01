@@ -1,4 +1,4 @@
-# BRICK.JS
+# 📦 BRICK.JS
 
 <img src="https://media.giphy.com/media/zKuYMf3dcODU4/giphy-downsized-large.gif" />
 
@@ -7,7 +7,7 @@
 __Brick.js is a LOW LEVEL API.__
 
 
-📦 Create, pack, repack, unpack, destroy, move and link objects for creating any library, framework or JavaScript application.
+> Create, pack, repack, unpack, destroy, move and link objects for creating any library, framework or JavaScript application.
 
 * Built on a top Class system
 * Built-in event system
@@ -37,7 +37,7 @@ No dependencies
 
 Use with CommonJS, AMD module, global IIFE.
 
-# Getting started
+# 📖 Getting started
 
 ## Define a Brick
 
@@ -73,23 +73,23 @@ function foo(..., config, bricks) {
 const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 ```
 
-## API
+# 💻 API
 
-## Bundle
+# Bundle
 
-## Bricks list
-
-😿 Comming soon.
-
-## Projects and sub projects
+# 📦 Bricks list
 
 😿 Comming soon.
 
-## Help
+# Projects and sub projects
 
-You are welcome to create Pull Requests, ask questions, comment the code, improve it, like it or not 🙂
+😿 Comming soon.
 
-## Support the project
+# Help
+
+You are welcome to create Pull Requests, ask questions, comment the code, improve it and like it or not 🙂
+
+# Support the project
 
 Help me maintain the libraries, projects, sub projects, modules and bricks with donations.
 
