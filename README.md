@@ -1,6 +1,6 @@
 # BRICK.JS
 
-> ⚠️ This project is under development, all of this things can be removed, updated and things can be added.
+> ⚠️ This project is under development, all of this things can be removed, updated or added.
 
 __Brick.js is a LOW LEVEL API.__
 
