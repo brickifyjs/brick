@@ -224,6 +224,8 @@ Brick.prototype.quux = true;
 
 You are welcome to create Pull Requests, ask questions, comment the code, improve it and like it or not 🙂
 
+[![Gitter](https://badges.gitter.im/brickifys-brick-js/Lobby.svg)](https://gitter.im/brickifys-brick-js/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # 💵 Support the project with donations
 
 Why ?
