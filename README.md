@@ -45,14 +45,14 @@ Use with CommonJS, AMD module, global IIFE.
 
 👉 __Using EcmaScript 5__
 
-```
+```js
 var Foo = Brick.extends(function () {
 });
 ```
 
 👉 __Using EcmaScript 6__
 
-```
+```js
 class Foo extends Brick {
 }
 ```
@@ -61,7 +61,7 @@ class Foo extends Brick {
 
 👉 __Using EcmaScript 5__
 
-```
+```js
 function foo(..., config, bricks) {
     return Brick.create(new Foo(..., config, bricks));
 };
@@ -69,9 +69,54 @@ function foo(..., config, bricks) {
 
 👉 __Using EcmaScript 6__
 
-```
+```js
 const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 ```
+
+## Attach a middleware to the Class
+
+👉 __Using EcmaScript 5__
+
+```js
+function foo(..., config, bricks) {
+    return Brick.create(new Foo(..., config, bricks));
+};
+```
+
+👉 __Using EcmaScript 6__
+
+
+
+## Attach a middleware to the Instance
+
+👉 __Using EcmaScript 5__
+
+```js
+// Using the config object
+{
+  mw: {
+    create: function() {}
+  }
+}
+
+// Using the constructor
+this.constructor = function() {
+  this.config = {
+    mw: {
+      create: function() {}
+    }
+  }
+}
+
+// Using the constructor and the Middleware Brick
+this.constructor = function() {
+  middleware('create',function(){}, this);
+}
+```
+
+👉 __Using EcmaScript 6__
+
+
 
 # 💻 API
 
