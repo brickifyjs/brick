@@ -18,7 +18,7 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in merge system 
 * Built-in store system
 * Built-in config/props system
-* Built-in flow and life cycle (root/sibling, manual/auto, up to down/down to up)
+* Built-in flow and lifecycle (root/sibling, manual/auto, up to down/down to up)
 * Built-in methods, utils and properties
 * Built-in conversion system
 * Built-in package, build, bundler system
@@ -201,6 +201,72 @@ Brick.prototype.quux = true;
 
 👉 __Using EcmaScript 6__
 
+## Retreive a Brick
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Understrand the stack
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Understrand the flow
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Understrand the lifecyle
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Understrand the prevent system
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Understrand the reactivity system
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Retreive a brick
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+
+
+👉 __Using EcmaScript 6__
 
 
 # 💻 API
