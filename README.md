@@ -224,25 +224,34 @@ Brick.prototype.quux = true;
 
 You are welcome to create Pull Requests, ask questions, comment the code, improve it and like it or not 🙂
 
-# 💵 Support the project
+# 💵 Support the project with donations
 
-Help me maintain the libraries, projects, sub projects, modules and bricks with donations.
+Why ?
 
-__5__
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/5)
+* Maintain, create, update and support
+    * API
+    * Libraries
+    * Projects
+    * Sub projects
+    * Modules 
+    * Bricks
+* Pay domains, servers, cloudflare
+* Pay me 🍺🍣
 
-__10__
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/10)
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/5) 5$
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/10) 10$
 
 __25__
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/25)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/25) 25$
 
 __50__
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/50)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/50) 50$
 
 __100__
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/100)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/100) 100$
 
-❤️ Thanks!
+❤️ Thanks and happy coding!
 
 <img src="https://media.giphy.com/media/1VrOcCmld1a92/giphy.gif" align="center" />
