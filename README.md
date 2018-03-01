@@ -222,7 +222,7 @@ Brick.prototype.quux = true;
 
 # 🆘 Help
 
-You are welcome to create Pull Requests, ask questions, comment the code, improve it and like it or not 🙂
+You are welcome to create Pull Requests, ask questions, comment the code, improve, suggest new features and like it or not 🙂
 
 [![Gitter](https://badges.gitter.im/brickifys-brick-js/Lobby.svg)](https://gitter.im/brickifys-brick-js/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
