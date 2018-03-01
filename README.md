@@ -159,6 +159,7 @@ Brick.prototype.quux = true;
 👉 __Using EcmaScript 5__
 
 ```js
+var Bar = Foo.extends(function(){ ... });
 ```
 
 👉 __Using EcmaScript 6__
@@ -168,6 +169,9 @@ Brick.prototype.quux = true;
 👉 __Using EcmaScript 5__
 
 ```js
+// Just redefine it...
+var Foo = Brick.extends(function () {
+});
 ```
 
 👉 __Using EcmaScript 6__
@@ -177,6 +181,21 @@ Brick.prototype.quux = true;
 👉 __Using EcmaScript 5__
 
 ```js
+
+// Using commonJS
+var Foo = require('brick-foo').Foo;
+var foo = require('brick-foo').foo;
+
+// Using global
+window.foo;
+window.Foo
+
+// Using Brick
+Brick.register(Foo);
+
+Brick.foo;
+Brick.Foo;
+
 ```
 
 👉 __Using EcmaScript 6__
