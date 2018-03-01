@@ -75,11 +75,22 @@ const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 
 ## Bundle
 
-## Bricks
+## Bricks list
+
+😿 Comming soon.
 
 ## Projects and sub projects
+
+😿 Comming soon.
+
+## Help
+
+You are welcome to create Pull Requests, ask questions, comment the code, improve it, like it or not 🙂
 
 ## Support the project
 
 Help me maintain the libraries, projects, sub projects, modules and bricks with donations.
+
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/5)
+
+Thanks!
