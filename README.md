@@ -101,11 +101,7 @@ function foo(..., config, bricks) {
 
 // Using the constructor
 this.constructor = function() {
-  this.config = {
-    mw: {
-      create: function() {}
-    }
-  }
+  this. middleware('create',function(){});
 }
 
 // Using the constructor and the Middleware Brick
