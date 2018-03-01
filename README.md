@@ -1,6 +1,6 @@
 # BRICK.JS
 
-<img src="https://media.giphy.com/media/zKuYMf3dcODU4/giphy.gif" />
+<img src="http://gph.is/2mDNtD7" />
 
 > ⚠️ This project is under development, all of this things can be removed, updated or added.
 
