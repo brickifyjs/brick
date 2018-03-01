@@ -39,6 +39,8 @@ Use with CommonJS, AMD module, global IIFE.
 
 ## Define a Brick
 
+💻[_Learn more about methods and properties_](#API)
+
 👉 __Using EcmaScript 5__
 
 ```
