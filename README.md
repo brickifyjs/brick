@@ -75,7 +75,11 @@ const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 
 # 💻 API
 
+😿 Work in progress.
+
 # 📦 Bundle
+
+😿 Comming soon.
 
 # 🔖 Bricks list
 
