@@ -97,7 +97,11 @@ You are welcome to create Pull Requests, ask questions, comment the code, improv
 
 Help me maintain the libraries, projects, sub projects, modules and bricks with donations.
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/10)
+[![Donate 5](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/5)
+[![Donate 10](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/10)
+[![Donate 25](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/25)
+[![Donate 50](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/50)
+[![Donate 100](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/100)
 
 ❤️ Thanks!
 
