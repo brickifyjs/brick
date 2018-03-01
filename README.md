@@ -279,7 +279,7 @@ Brick.brickify([mainValue,...], config, prototype, public, private, static);
 
 👉 __Using EcmaScript 6__
 
-## Access to the merging method
+## Access the merging method
 
 Will be moved has a sub package in the core.
 
