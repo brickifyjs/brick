@@ -39,6 +39,20 @@ Use with CommonJS, AMD module, global IIFE.
 
 ## Define a Brick
 
+👉 __Using EcmaScript 5__
+
+```
+var Foo = Brick.extends(function () {
+});
+```
+
+👉 __Using EcmaScript 6__
+
+```
+class Foo extends Brick {
+}
+```
+
 ## API
 
 ## Bundle
