@@ -39,7 +39,7 @@ Use with CommonJS, AMD module, global IIFE.
 
 ## Define a Brick
 
-💻[_Learn more about methods and properties_](#API)
+💻 [_Learn more about methods and properties_](#api)
 
 👉 __Using EcmaScript 5__
 
