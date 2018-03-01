@@ -95,6 +95,6 @@ Help me maintain the libraries, projects, sub projects, modules and bricks with 
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/5)
 
-Thanks!
+❤️ Thanks!
 
 <img src="https://media.giphy.com/media/1VrOcCmld1a92/giphy.gif" align="center" />
