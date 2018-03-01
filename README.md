@@ -53,6 +53,22 @@ class Foo extends Brick {
 }
 ```
 
+## Define the Brick initializer
+
+👉 __Using EcmaScript 5__
+
+```
+function foo(..., config, bricks) {
+    return Brick.create(new Foo(..., config, bricks));
+};
+```
+
+👉 __Using EcmaScript 6__
+
+```
+const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
+```
+
 ## API
 
 ## Bundle
