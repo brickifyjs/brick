@@ -277,9 +277,22 @@ Brick.brickify([mainValue,...], config, prototype, public, private, static);
 ```js
 ```
 
+👉 __Using EcmaScript 6__
 
+## Access to the merging method
+
+Will be moved has a sub package in the core.
+
+💡 ![See on NPM](https://www.npmjs.com/package/@brickify/m-merge)
+
+👉 __Using EcmaScript 5__
+
+```js
+Brick.merge(A,B,{...});
+```
 
 👉 __Using EcmaScript 6__
+
 
 
 # 💻 API
