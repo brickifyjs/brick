@@ -10,9 +10,9 @@ __Brick.js is a LOW LEVEL API.__
 > Create, pack, repack, unpack, destroy, move and link objects for creating any library, framework or JavaScript application.
 
 * Built on a top Class system
-* Built-in event system
-* Built-in hook system
 * Built-in middleware system
+* Built-in hook system
+* Built-in event system
 * Built-in stack system
 * Built-in prevent stack system (continue, break, return the next stack/group of stack)
 * Built-in diff system
