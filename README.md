@@ -195,6 +195,8 @@ Brick.prototype.quux = true;
 
 👉 __Using EcmaScript 5__
 
+💡
+
 ```js
 ```
 
