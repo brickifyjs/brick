@@ -6,7 +6,6 @@
 
 __Brick.js is a LOW LEVEL API.__
 
-
 > Create, pack, repack, unpack, destroy, move and link objects for creating any library, framework or JavaScript application.
 
 * Built on a top Class system
@@ -209,6 +208,10 @@ Brick.prototype.quux = true;
 😿 Work in progress.
 
 # 📦 Bundle
+
+😿 Comming soon.
+
+# 🎲 Playground
 
 😿 Comming soon.
 
