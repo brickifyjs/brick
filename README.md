@@ -214,22 +214,14 @@ foo(...);
 
 👉 __Using EcmaScript 5__
 
-Not sure about this.
+Not sure about this feature and implementation...
 
 ```js
-Brick.brickify([mainValue,...], config, prototype, methods);
+Brick.brickify([mainValue,...], config, prototype, public, private, static);
 ```
 
 👉 __Using EcmaScript 6__
 
-## Retreive a Brick
-
-👉 __Using EcmaScript 5__
-
-💡
-
-```js
-```
 
 ## Understrand the stack
 
