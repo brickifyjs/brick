@@ -141,6 +141,7 @@ foo(..., middleware('pack', function(){}));
 
 👉 __Using EcmaScript 5__
 
+```js
 // Extending the constructor
 Brick.baz = function() {};
 Brick.qux = {};
@@ -150,6 +151,7 @@ Brick.quux = true;
 Brick.prototype.baz = function() {};
 Brick.prototype.qux = {};
 Brick.prototype.quux = true;
+```
 
 👉 __Using EcmaScript 6__
 
