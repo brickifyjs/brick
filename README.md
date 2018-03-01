@@ -1,5 +1,9 @@
 # BRICK.JS
 
+<p align="center">
+![](https://media.giphy.com/media/zKuYMf3dcODU4/giphy.gif)
+</p>
+
 > ⚠️ This project is under development, all of this things can be removed, updated or added.
 
 __Brick.js is a LOW LEVEL API.__
@@ -94,3 +98,7 @@ Help me maintain the libraries, projects, sub projects, modules and bricks with 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/5)
 
 Thanks!
+
+<p align="center">
+![](https://media.giphy.com/media/1VrOcCmld1a92/giphy.gif)
+</p>
