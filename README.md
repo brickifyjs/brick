@@ -125,7 +125,17 @@ foo(..., middleware('pack', function(){}));
 
 👉 __Using EcmaScript 6__
 
+## Attach a middleware to all Bricks
 
+👉 __Using EcmaScript 5__
+
+👉 __Using EcmaScript 6__
+
+## Attach a middleware to all bricks
+
+👉 __Using EcmaScript 5__
+
+👉 __Using EcmaScript 6__
 
 # 💻 API
 
