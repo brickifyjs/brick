@@ -288,7 +288,7 @@ Will be moved has a sub package in the core.
 👉 __Using EcmaScript 5__
 
 ```js
-Brick.merge(A,B,{...});
+Brick.merge(A, B, {...});
 ```
 
 👉 __Using EcmaScript 6__
