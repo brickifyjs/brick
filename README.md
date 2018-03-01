@@ -283,7 +283,7 @@ Brick.brickify([mainValue,...], config, prototype, public, private, static);
 
 Will be moved has a sub package in the core.
 
-💡 ![See on NPM](https://www.npmjs.com/package/@brickify/m-merge)
+💡 [See on NPM](https://www.npmjs.com/package/@brickify/m-merge)
 
 👉 __Using EcmaScript 5__
 
