@@ -307,7 +307,7 @@ Why ?
     * Modules 
     * Bricks
 * Pay domains, servers, cloudflare
-* Pay me 🍺🍣
+* Gift 🍺🍣
 
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/nraibaud/5) @ 5$
