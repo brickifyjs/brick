@@ -75,21 +75,21 @@ const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 
 # 💻 API
 
-# Bundle
+# 📦 Bundle
 
-# 📦 Bricks list
-
-😿 Comming soon.
-
-# Projects and sub projects
+# 🔖 Bricks list
 
 😿 Comming soon.
 
-# Help
+# 🔖 Projects and sub projects
+
+😿 Comming soon.
+
+# 🆘 Help
 
 You are welcome to create Pull Requests, ask questions, comment the code, improve it and like it or not 🙂
 
-# Support the project
+# 💵 Support the project
 
 Help me maintain the libraries, projects, sub projects, modules and bricks with donations.
 
