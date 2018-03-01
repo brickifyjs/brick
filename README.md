@@ -231,7 +231,7 @@ Why ?
 * Maintain, create, update and support
     * API
     * Libraries
-    * Projects
+    * Projects
     * Sub projects
     * Modules 
     * Bricks
