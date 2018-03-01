@@ -112,6 +112,15 @@ this.constructor = function() {
 this.constructor = function() {
   middleware('create',function(){}, this);
 }
+
+// Using global system
+Brick.middleware(brickId, 'create', function(){});
+
+// Using deporting system
+brick.find(brickId).middleware('pack', function(){});
+
+// Using sub bricks system
+foo(..., middleware('pack', function(){}));
 ```
 
 👉 __Using EcmaScript 6__
