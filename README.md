@@ -188,7 +188,7 @@ var foo = require('brick-foo').foo;
 
 // Using global
 window.foo;
-window.Foo
+window.Foo;
 
 // Using Brick
 Brick.register(Foo);
@@ -205,17 +205,19 @@ Brick.Foo;
 👉 __Using EcmaScript 5__
 
 ```js
+foo(...);
 ```
 
 👉 __Using EcmaScript 6__
 
-## Convert anything to a Brick
+## Convert anything to a Brick object
 
 👉 __Using EcmaScript 5__
 
-💡
+Not sure about this.
 
 ```js
+Brick.brickify([mainValue,...], config, prototype, methods);
 ```
 
 👉 __Using EcmaScript 6__
