@@ -119,6 +119,10 @@ Brick.middleware(brickId, 'create', function(){});
 // Using deporting system
 brick.find(brickId).middleware('pack', function(){});
 
+// Using deporting system
+var fooBrick = brick.find(brickId);
+fooBrick.middleware('pack', function(){});
+
 // Using sub bricks system
 foo(..., middleware('pack', function(){}));
 ```
