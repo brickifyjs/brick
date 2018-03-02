@@ -297,11 +297,11 @@ Brick.brickify([mainValue,...], config, prototype, public, private, static);
 👉 __Using EcmaScript 5__
 
 ```js
-var myBrick = foo(...,'myBrick');
+var myBrick = foo(..., 'myBrick');
 
-brick.find(myBrick);
+Brick.find(myBrick);
 // or
-brick.find('myBrick');
+Brick.find('myBrick');
 ```
 
 👉 __Using EcmaScript 6__
@@ -311,6 +311,9 @@ brick.find('myBrick');
 👉 __Using EcmaScript 5__
 
 ```js
+foo(..., {
+  id:'myBrick' // Custom identifier
+});
 ```
 
 👉 __Using EcmaScript 6__
