@@ -222,6 +222,23 @@ Brick.brickify([mainValue,...], config, prototype, public, private, static);
 
 👉 __Using EcmaScript 6__
 
+## Add a custom identifier
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+## Define a config
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
 
 ## Understrand the stack
 
