@@ -4,6 +4,8 @@
 
 > ⚠️ This project is under development, all of this things can be removed, updated or added.
 
+> All is not here, i am still in reflection
+
 > Please come back frequently to see news.
 
 __Brick.js is a LOW LEVEL API.__
@@ -25,7 +27,14 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in methods, utils and properties
 * Built-in conversion system
 * Built-in package, build, bundler system
+* Built-in envrinment system
+* Built-in loader system (such as webpack, parcel or rollup)
 * Structure can be done by a deporting system, global system, sub bricks system, clojure, polymorphism.
+* Defined Brick structure
+* Built-in unit tests system using ospec.js
+* Built-in unit functionnal tests system using casper.js
+* Built-in benchmark system using branchmarks.js
+
 
 Easily extensible and overridable
 
@@ -38,6 +47,8 @@ Works browser side and server side
 Works with bricks and non bricks (Any JavaScript object)
 
 No dependencies
+
+Few dev dependencies
 
 Use with CommonJS, AMD module, global IIFE.
 
@@ -86,9 +97,7 @@ const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 👉 __Using EcmaScript 5__
 
 ```js
-function foo(..., config, bricks) {
-    return Brick.create(new Foo(..., config, bricks));
-};
+Brick.use(Foo.prototype.pack, function(){ ... });
 ```
 
 👉 __Using EcmaScript 6__
@@ -135,11 +144,19 @@ foo(..., middleware('pack', function(){}));
 
 👉 __Using EcmaScript 5__
 
+```js
+Brick.use(Brick.prototype.pack, function(){ ... });
+```
+
 👉 __Using EcmaScript 6__
 
 ### Attach a middleware to all bricks
 
 👉 __Using EcmaScript 5__
+
+```js
+Brick.use(Brick.pack, function(){ ... });
+```
 
 👉 __Using EcmaScript 6__
 
@@ -155,6 +172,8 @@ They also supports the phase system.
 👉 __Using EcmaScript 5__
 
 ```js
+Brick.down(Foo.prototype.pack, function(){ ... });
+Brick.up(Foo.prototype.pack, function(){ ... });
 ```
 
 👉 __Using EcmaScript 6__
@@ -165,6 +184,48 @@ They also supports the phase system.
 👉 __Using EcmaScript 5__
 
 ```js
+// Using the config object
+{
+  down: {
+    pack: function() {}
+  },
+  up: {
+    pack: function() {}
+  }
+}
+
+// Using the constructor
+this.constructor = function() {
+  this.down('pack',function(){});
+  this.up('pack',function(){});
+}
+
+// Using the constructor and the Middleware Brick
+this.constructor = function() {
+  down('pack',function(){}, this);
+  up('pack',function(){}, this);
+}
+
+// Using global system
+Brick.down(brickId, 'pack', function(){});
+Brick.up(brickId, 'pack', function(){});
+
+// Using deporting system
+brick.find(brickId).down('pack', function(){});
+brick.find(brickId).up('pack', function(){});
+
+// Using deporting system
+var fooBrick = brick.find(brickId);
+fooBrick.down('pack', function(){});
+fooBrick.up('pack', function(){});
+
+
+// Using sub bricks system
+foo(..., [
+  down('pack', function(){}),
+  up('pack', function(){})
+]);
+
 ```
 
 👉 __Using EcmaScript 6__
@@ -173,14 +234,23 @@ They also supports the phase system.
 
 👉 __Using EcmaScript 5__
 
+```js
+Brick.down(Brick.prototype.pack, function(){ ... });
+Brick.up(Brick.prototype.pack, function(){ ... });
+```
+
 👉 __Using EcmaScript 6__
 
 ### Attach a hook to all bricks
 
 👉 __Using EcmaScript 5__
 
-👉 __Using EcmaScript 6__
+```js
+Brick.down(Brick.pack, function(){ ... });
+Brick.up(Brick.pack, function(){ ... });
+```
 
+👉 __Using EcmaScript 6__
 
 ## Events
 
@@ -193,6 +263,7 @@ If they are called after so they supports the phase system.
 👉 __Using EcmaScript 5__
 
 ```js
+Brick.on(Foo.prototype.pack, function(){ ... });
 ```
 
 👉 __Using EcmaScript 6__
@@ -203,6 +274,48 @@ If they are called after so they supports the phase system.
 👉 __Using EcmaScript 5__
 
 ```js
+// Using the config object
+{
+  on: {
+    pack: function() {}
+  },
+  'on:up': {
+    pack: function() {}
+  }
+}
+
+// Using the constructor
+this.constructor = function() {
+  this.on('pack',function(){});
+  this.on('pack:up',function(){});
+}
+
+// Using the constructor and the Middleware Brick
+this.constructor = function() {
+  on('pack',function(){}, this);
+  on('pack:up',function(){}, this);
+}
+
+// Using global system
+Brick.on(brickId, 'pack', function(){});
+Brick.on(brickId, 'pack:up', function(){});
+
+// Using deporting system
+brick.find(brickId).on('pack', function(){});
+brick.find(brickId).on('pack:up', function(){});
+
+// Using deporting system
+var fooBrick = brick.find(brickId);
+fooBrick.on('pack', function(){});
+fooBrick.on('pack:up', function(){});
+
+
+// Using sub bricks system
+foo(..., [
+  on('pack', function(){}),
+  on('pack:up', function(){})
+]);
+
 ```
 
 👉 __Using EcmaScript 6__
@@ -211,11 +324,22 @@ If they are called after so they supports the phase system.
 
 👉 __Using EcmaScript 5__
 
+```js
+Brick.on(Brick.prototype.pack, function(){ ... });
+Brick.on(Brick.prototype.pack, function(){ ... }, true);
+```
+
 👉 __Using EcmaScript 6__
 
 ### Attach an event to all bricks
 
 👉 __Using EcmaScript 5__
+
+```js
+Brick.on(Brick.pack, function(){ ... });
+Brick.on(Brick.pack, function(){ ... }, true);
+```
+
 
 👉 __Using EcmaScript 6__
 
@@ -338,18 +462,18 @@ foo(..., {
 💡All methods attached to the __prototype__ inherits of the stack, flow, lifecyle, prevent, reactivity, phase, hooks, middlewares and events system.
 
 ```js
-// Sync
+// Async
 this.pack = function(target, position, next) {
   // do something ...
   next(); // continue next stack
 };
 
-// Async
+// Sync
 this.pack = function(target, position, next) {
   setTimeout(next, 3000); // continue next stack 3 seconds later
 };
 
-// Group a stack using the Brick "Bricks"
+// Group a stack using the Bricks Brick
 // TODO
 ```
 
@@ -375,6 +499,8 @@ Each brick as a diff method so that you can use to add a diffing logic.
 
 💻 [_Learn more about the diff results_](#api)
 
+😿 Work in progress.
+
 👉 __Using EcmaScript 5__
 
 ```js
@@ -389,6 +515,28 @@ Each brick as a diff method so that you can use to add a diffing logic.
 
 ## Understranding the repack (rebuild) system
 
+When a brick has been packed, when called pack method, calling pack again will run the repack method.
+
+If a diff method is set, it will run it before calling the repack method.
+
+The pack/diff/repack system is called when something changes, relationships are also updated two way.
+
+Repack cycle can be called mannually or automatically.
+
+👉 __Using EcmaScript 5__
+
+```js
+
+```
+
+👉 __Using EcmaScript 6__
+
+## Understranding the unpack system
+
+It will "detached" the relation/object but not destroy the instance. 
+
+Unpack cycle can be called mannually or automatically.
+
 👉 __Using EcmaScript 5__
 
 ```js
@@ -397,6 +545,12 @@ Each brick as a diff method so that you can use to add a diffing logic.
 👉 __Using EcmaScript 6__
 
 ## Understranding the destroy system
+
+It will destroy the brick instance and relationships.
+
+Destory will call a repack/diff of relationships.
+
+Destroy cycle can be called mannually or automatically.
 
 👉 __Using EcmaScript 5__
 
@@ -407,6 +561,8 @@ Each brick as a diff method so that you can use to add a diffing logic.
 
 ## Understranding the flow
 
+😿 Shema in progress.
+
 👉 __Using EcmaScript 5__
 
 ```js
@@ -415,6 +571,8 @@ Each brick as a diff method so that you can use to add a diffing logic.
 👉 __Using EcmaScript 6__
 
 ## Understranding the lifecyle
+
+😿 Shema in progress.
 
 👉 __Using EcmaScript 5__
 
@@ -425,12 +583,22 @@ Each brick as a diff method so that you can use to add a diffing logic.
 
 ## Understranding the reactivity system
 
+By default you can define a value property that will be automatically binding.
+
+You can define other properties to bind.
+
 👉 __Using EcmaScript 5__
 
 ```js
-// Manual reactivity (one way data binding)
+// Manual reactivity
 
-// Auto reactivity (two way data binding)
+// Auto reactivity
+
+// One way data binding
+
+// Two way data binding
+
+// Tree way data binding (😿 Comming later)
 
 // Reactivity from root
 
@@ -488,13 +656,65 @@ Brick.merge(A, B, {...});
 
 👉 __Using EcmaScript 6__
 
+## Listen/watch, react on everything
+
+Will be moved has a sub package in the core.
+
+💡 [See on NPM](https://www.npmjs.com/package/@brickify/m-gobp)
+
+👉 __Using EcmaScript 5__
+
+```js
+// Using object path
+
+// Using Brick Event
+
+// Using built-in link system
+```
+
+👉 __Using EcmaScript 6__
+
+## Defined Brick structure
+
+```
+/api
+  private-1.js
+  private-2.js
+  /Text
+     private-1.js
+     private-2.js
+     /tests
+     Text.client.js
+     Text.server.js
+```
+
+## Run unit tests with ospec.js
+
+😿 Comming soon.
+
+## Run functionnal tests with casper.js
+
+😿 Comming soon.
+
+## Run benchmarks
+
+😿 Comming soon.
+
 # 💻 Example using Slick.js
+
+😿 Comming soon.
+
+# 💻 Demo of Tetris
 
 😿 Comming soon.
 
 # 💻 API
 
 😿 Work in progress.
+
+* Signature methods, utils and constants.
+* Examples
+* Live demo
 
 # 📦 Bundle
 
@@ -511,6 +731,11 @@ Brick.merge(A, B, {...});
 # 🔖 Projects and sub projects
 
 😿 Comming soon.
+
+# TODO
+
+* Continue the documentation
+* Split the documentation
 
 # 🆘 Help
 
