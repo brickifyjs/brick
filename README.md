@@ -3,7 +3,8 @@
 <img src="https://media.giphy.com/media/zKuYMf3dcODU4/giphy-downsized-large.gif" />
 
 > ⚠️ This project is under development, all of this things can be removed, updated or added.
-Please come back frequently to see news.
+
+> Please come back frequently to see news.
 
 __Brick.js is a LOW LEVEL API.__
 
