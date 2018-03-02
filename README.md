@@ -337,54 +337,54 @@ this.pack = function(target, position, next) {
   setTimeout(next, 3000); // continue next stack 3 seconds later
 };
 
-// Group a stack using the Brick __Bricks__
+// Group a stack using the Brick "Bricks"
 // TODO
-```
-
-## Understrand the flow
-
-👉 __Using EcmaScript 5__
-
-💡
-
-```js
-```
-
-## Understrand the lifecyle
-
-👉 __Using EcmaScript 5__
-
-💡
-
-```js
 ```
 
 ## Understrand the prevent system
 
 👉 __Using EcmaScript 5__
 
-💡
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+## Understrand the flow
+
+👉 __Using EcmaScript 5__
 
 ```js
 ```
+
+👉 __Using EcmaScript 6__
+
+## Understrand the lifecyle
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
 
 ## Understrand the reactivity system
 
 👉 __Using EcmaScript 5__
 
-💡
-
 ```js
 ```
+
+👉 __Using EcmaScript 6__
 
 ## Understrand the position system
 
 👉 __Using EcmaScript 5__
 
-💡
-
 ```js
 ```
+
+👉 __Using EcmaScript 6__
 
 ## Understrand the phase system
 
