@@ -79,6 +79,8 @@ const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 
 ## Middlewares
 
+💡 Middlewares are called before each methods.
+
 ### Attach a middleware to the Class
 
 👉 __Using EcmaScript 5__
@@ -144,6 +146,10 @@ foo(..., middleware('pack', function(){}));
 
 ## Hooks
 
+💡 Middlewares are called after each methods.
+
+They also supports the phase system.
+
 ### Attach a hook to the Class
 
 👉 __Using EcmaScript 5__
@@ -177,6 +183,10 @@ foo(..., middleware('pack', function(){}));
 
 
 ## Events
+
+💡 Events are called before and or after each methods.
+
+If they are called after so they supports the phase system.
 
 ### Attach an event to the Class
 
@@ -361,14 +371,23 @@ this.pack = function(target, position, next) {
 
 ## Understranding the diff system
 
+Each brick as a diff method so that you can use to add a diffing logic.
+
+💻 [_Learn more about the diff results_](#api)
+
 👉 __Using EcmaScript 5__
 
 ```js
+
+// Using the diff method
+
+// Using the Brick Diff
+
 ```
 
 👉 __Using EcmaScript 6__
 
-## Understranding the repack system
+## Understranding the repack (rebuild) system
 
 👉 __Using EcmaScript 5__
 
@@ -409,6 +428,14 @@ this.pack = function(target, position, next) {
 👉 __Using EcmaScript 5__
 
 ```js
+// Manual reactivity (one way data binding)
+
+// Auto reactivity (two way data binding)
+
+// Reactivity from root
+
+// Reactivity from sibling
+
 ```
 
 👉 __Using EcmaScript 6__
