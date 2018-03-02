@@ -22,7 +22,7 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in methods, utils and properties
 * Built-in conversion system
 * Built-in package, build, bundler system
-* Structure can be done by a deporting system, global system and sub bricks system.
+* Structure can be done by a deporting system, global system, sub bricks system, polymorphism.
 
 Easily extensible and overridable
 
