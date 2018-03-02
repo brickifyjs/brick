@@ -42,6 +42,8 @@ Compatible with all VanillaJS code
 
 Compatible with all version of JavaScript/EcmaScript
 
+Compatible with NPM, bower.
+
 Works browser side and server side
 
 Works with bricks and non bricks (Any JavaScript object)
