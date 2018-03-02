@@ -32,7 +32,7 @@ Compatible with all version of JavaScript/EcmaScript
 
 Works browser side and server side
 
-Works with bricks and non bricks
+Works with bricks and non bricks (Any JavaScript object)
 
 No dependencies
 
