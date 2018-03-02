@@ -436,9 +436,11 @@ It is used automatically by the core for the relations.
 
 ## Understrand the phase system
 
-👉 __Using EcmaScript 5__
+Phase is called by default down side.
+You can add hook or event to listen to up or both down and up.
+It is called when all the sub bricks stack are done.
 
-💡
+👉 __Using EcmaScript 5__
 
 ```js
 ```
