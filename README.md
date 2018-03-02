@@ -357,6 +357,33 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
+## Understrand the diff system
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+## Understrand the repack system
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+## Understrand the destroy system
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
 ## Understrand the flow
 
 👉 __Using EcmaScript 5__
