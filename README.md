@@ -321,7 +321,7 @@ foo(..., {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the stack
+## Understranding the stack
 
 👉 __Using EcmaScript 5__
 
@@ -343,7 +343,7 @@ this.pack = function(target, position, next) {
 // TODO
 ```
 
-## Understrand the prevent system
+## Understranding the prevent system
 
 👉 __Using EcmaScript 5__
 
@@ -359,7 +359,7 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the diff system
+## Understranding the diff system
 
 👉 __Using EcmaScript 5__
 
@@ -368,7 +368,7 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the repack system
+## Understranding the repack system
 
 👉 __Using EcmaScript 5__
 
@@ -377,7 +377,7 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the destroy system
+## Understranding the destroy system
 
 👉 __Using EcmaScript 5__
 
@@ -386,7 +386,7 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the flow
+## Understranding the flow
 
 👉 __Using EcmaScript 5__
 
@@ -395,7 +395,7 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the lifecyle
+## Understranding the lifecyle
 
 👉 __Using EcmaScript 5__
 
@@ -404,7 +404,7 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the reactivity system
+## Understranding the reactivity system
 
 👉 __Using EcmaScript 5__
 
@@ -413,7 +413,7 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 6__
 
-## Understrand the position system
+## Understranding the position system
 
 👉 __Using EcmaScript 5__
 
@@ -434,7 +434,7 @@ It is used automatically by the core for the relations.
 
 👉 __Using EcmaScript 6__
 
-## Understrand the phase system
+## Understranding the phase system
 
 > Phase is called by default down side.
 > You can add hook or event to listen to up or both down and up.
