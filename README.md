@@ -6,7 +6,7 @@
 
 __Brick.js is a LOW LEVEL API.__
 
-> Create, pack, repack, unpack, destroy, move and link objects for creating any library, framework or JavaScript application.
+> Create, pack, diff, repack, unpack, destroy, move and link objects for creating any library, framework or JavaScript application.
 
 * Built on a top Class system
 * Built-in middleware system
@@ -322,7 +322,7 @@ foo(..., {
 
 👉 __Using EcmaScript 5__
 
-💡
+💡All methods attached to the __prototype__ inherits of the stack, flow, lifecyle, prevent, reactivity, hooks, middlewares and events system.
 
 ```js
 ```
