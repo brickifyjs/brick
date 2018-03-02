@@ -417,7 +417,19 @@ this.pack = function(target, position, next) {
 
 👉 __Using EcmaScript 5__
 
+The position is an information that you can use in your logic manually.
+
+It is used automatically by the core for the relations.
+
 ```js
+/*
+ Brick.mount // insert has a sub bricks and replace all sub bricks
+ Brick.replace // Replace the targeted brick
+ Brick.before // insert before the brick
+ Brick.after // insert after the brick
+ Brick.append // insert at the end of sub bricks
+ Brick.prepend // insert at the start of sub bricks
+*/
 ```
 
 👉 __Using EcmaScript 6__
