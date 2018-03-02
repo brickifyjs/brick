@@ -13,7 +13,7 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in hook system
 * Built-in event system
 * Built-in position system
-* Built-in stack system
+* Built-in stack system (sync and async)
 * Built-in prevent stack system (continue, break, return the next stack/group of stack)
 * Built-in diff system
 * Built-in merge system 
@@ -323,11 +323,19 @@ foo(..., {
 
 👉 __Using EcmaScript 5__
 
-💡All methods attached to the __prototype__ inherits of the stack, flow, lifecyle, prevent, reactivity, hooks, middlewares and events system.
+💡All methods attached to the __prototype__ inherits of the stack, flow, lifecyle, prevent, reactivity, phase, hooks, middlewares and events system.
 
 ```js
+// Sync
+this.pack = function(target, position, next) {
+  // do something ...
+  next(); // continue next stack
+};
 
-this.pack = function(target, position,
+// Async
+this.pack = function(target, position, next) {
+  setTimeout(next, 3000); // continue next stack 3 seconds later
+};
 
 // Group a stack using the Brick __Bricks__
 // TODO
