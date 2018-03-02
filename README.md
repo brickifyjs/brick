@@ -12,13 +12,14 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in middleware system
 * Built-in hook system
 * Built-in event system
+* Built-in position system
 * Built-in stack system
 * Built-in prevent stack system (continue, break, return the next stack/group of stack)
 * Built-in diff system
 * Built-in merge system 
 * Built-in store system
 * Built-in config/props system
-* Built-in flow and lifecycle (root/sibling, manual/auto, up to down/down to up)
+* Built-in flow and lifecycle (root/sibling, manual/auto, up to down/down to up (phase))
 * Built-in methods, utils and properties
 * Built-in conversion system
 * Built-in package, build, bundler system
@@ -325,6 +326,11 @@ foo(..., {
 💡All methods attached to the __prototype__ inherits of the stack, flow, lifecyle, prevent, reactivity, hooks, middlewares and events system.
 
 ```js
+
+this.pack = function(target, position,
+
+// Group a stack using the Brick __Bricks__
+// TODO
 ```
 
 ## Understrand the flow
@@ -355,6 +361,24 @@ foo(..., {
 ```
 
 ## Understrand the reactivity system
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Understrand the position system
+
+👉 __Using EcmaScript 5__
+
+💡
+
+```js
+```
+
+## Understrand the phase system
 
 👉 __Using EcmaScript 5__
 
