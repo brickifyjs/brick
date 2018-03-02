@@ -139,6 +139,73 @@ foo(..., middleware('pack', function(){}));
 👉 __Using EcmaScript 6__
 
 
+## Hooks
+
+### Attach a hook to the Class
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+
+### Attach a hook to the Instance
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+### Attach a hook to all Bricks
+
+👉 __Using EcmaScript 5__
+
+👉 __Using EcmaScript 6__
+
+### Attach a hook to all bricks
+
+👉 __Using EcmaScript 5__
+
+👉 __Using EcmaScript 6__
+
+
+## Events
+
+### Attach a hook to the Class
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+
+### Attach a hook to the Instance
+
+👉 __Using EcmaScript 5__
+
+```js
+```
+
+👉 __Using EcmaScript 6__
+
+### Attach a hook to all Bricks
+
+👉 __Using EcmaScript 5__
+
+👉 __Using EcmaScript 6__
+
+### Attach a hook to all bricks
+
+👉 __Using EcmaScript 5__
+
+👉 __Using EcmaScript 6__
+
 ## Extend the core
 
 👉 __Using EcmaScript 5__
