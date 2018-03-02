@@ -461,7 +461,7 @@ Brick.merge(A, B, {...});
 
 👉 __Using EcmaScript 6__
 
-
+# 💻 Example using Slick.js
 
 # 💻 API
 
