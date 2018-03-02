@@ -346,6 +346,13 @@ this.pack = function(target, position, next) {
 👉 __Using EcmaScript 5__
 
 ```js
+ // Brick.continue (Default, continue to next stack)
+ // Brick.break (Jump to next stack)
+ // Brick.return (Stop the stack)
+ 
+this.pack = function(target, position, next) {
+  next(Brick.return);
+};
 ```
 
 👉 __Using EcmaScript 6__
