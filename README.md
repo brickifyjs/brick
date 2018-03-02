@@ -74,7 +74,9 @@ function foo(..., config, bricks) {
 const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
 ```
 
-## Attach a middleware to the Class
+## Middlewares
+
+### Attach a middleware to the Class
 
 👉 __Using EcmaScript 5__
 
@@ -86,9 +88,7 @@ function foo(..., config, bricks) {
 
 👉 __Using EcmaScript 6__
 
-
-
-## Attach a middleware to the Instance
+### Attach a middleware to the Instance
 
 👉 __Using EcmaScript 5__
 
@@ -126,17 +126,18 @@ foo(..., middleware('pack', function(){}));
 
 👉 __Using EcmaScript 6__
 
-## Attach a middleware to all Bricks
+### Attach a middleware to all Bricks
 
 👉 __Using EcmaScript 5__
 
 👉 __Using EcmaScript 6__
 
-## Attach a middleware to all bricks
+### Attach a middleware to all bricks
 
 👉 __Using EcmaScript 5__
 
 👉 __Using EcmaScript 6__
+
 
 ## Extend the core
 
