@@ -463,6 +463,8 @@ Brick.merge(A, B, {...});
 
 # 💻 Example using Slick.js
 
+😿 Comming soon.
+
 # 💻 API
 
 😿 Work in progress.
