@@ -285,15 +285,6 @@ Brick.brickify([mainValue,...], config, prototype, public, private, static);
 ```js
 ```
 
-## Retreive a brick
-
-👉 __Using EcmaScript 5__
-
-💡
-
-```js
-```
-
 👉 __Using EcmaScript 6__
 
 ## Access the merging method
