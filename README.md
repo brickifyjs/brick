@@ -175,7 +175,7 @@ foo(..., middleware('pack', function(){}));
 
 ## Events
 
-### Attach a hook to the Class
+### Attach an event to the Class
 
 👉 __Using EcmaScript 5__
 
@@ -185,7 +185,7 @@ foo(..., middleware('pack', function(){}));
 👉 __Using EcmaScript 6__
 
 
-### Attach a hook to the Instance
+### Attach an event to the Instance
 
 👉 __Using EcmaScript 5__
 
@@ -194,13 +194,13 @@ foo(..., middleware('pack', function(){}));
 
 👉 __Using EcmaScript 6__
 
-### Attach a hook to all Bricks
+### Attach an event to all Bricks
 
 👉 __Using EcmaScript 5__
 
 👉 __Using EcmaScript 6__
 
-### Attach a hook to all bricks
+### Attach an event to all bricks
 
 👉 __Using EcmaScript 5__
 
