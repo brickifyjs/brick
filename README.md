@@ -73,22 +73,6 @@ class Foo extends Brick {
 }
 ```
 
-## Define the Brick initializer
-
-👉 __Using EcmaScript 5__
-
-```js
-function foo(..., config, bricks) {
-    return Brick.create(new Foo(..., config, bricks));
-};
-```
-
-👉 __Using EcmaScript 6__
-
-```js
-const foo = (..., config, bricks) => Brick.create(new Foo(..., config, bricks));
-```
-
 ## Middlewares
 
 💡 Middlewares are called before each methods.
