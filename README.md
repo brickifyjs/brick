@@ -18,7 +18,7 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in event system
 * Built-in position system
 * Built-in stack system (sync and async)
-* Built-in prevent stack system (continue, break, return the next stack/group of stack)
+* Built-in prevent stack system
 * Built-in diff system
 * Built-in merge system 
 * Built-in store system
@@ -455,13 +455,7 @@ this.pack = function(target, position, next) {
 👉 __Using EcmaScript 5__
 
 ```js
- // Brick.continue (Default, continue to next stack)
- // Brick.break (Jump to next stack)
- // Brick.return (Stop the stack)
- 
-this.pack = function(target, position, next) {
-  next(Brick.return);
-};
+
 ```
 
 👉 __Using EcmaScript 6__
