@@ -25,7 +25,6 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in config/props system
 * Built-in flow and lifecycle (root/sibling, manual/auto, up to down/down to up (phase))
 * Built-in methods, utils and properties
-* Built-in conversion system
 * Built-in package, build, bundler system
 * Built-in envrinment system
 * Built-in loader system (such as webpack, parcel or rollup)
@@ -415,18 +414,6 @@ Brick.Foo;
 
 ```js
 foo(...);
-```
-
-👉 __Using EcmaScript 6__
-
-## Convert anything to a Brick object
-
-👉 __Using EcmaScript 5__
-
-Not sure about this feature and implementation...
-
-```js
-Brick.brickify([mainValue,...], config, prototype, public, private, static);
 ```
 
 👉 __Using EcmaScript 6__
