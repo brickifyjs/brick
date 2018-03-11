@@ -17,6 +17,8 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in hook system
 * Built-in event system
 * Built-in position system
+* Built-in CRUD syntax
+* Built-in REST syntax
 * Built-in stack system (sync and async)
 * Built-in prevent stack system
 * Built-in diff system
