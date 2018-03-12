@@ -29,13 +29,18 @@ Event.prototype = {
   }
 };
 
-function eventify(destObject) {
+function eventify(destObject, withObject) {
   var props = ['on', 'off', 'dispatch'];
   for (var i = 0, len = props.length; i < len; i++) {
-    if (typeof destObject === 'function') {
-      destObject.prototype[props[i]] = Event.prototype[props[i]];
-    } else {
-      destObject[props[i]] = Event.prototype[props[i]];
+    destObject[props[i]] = Event.prototype[props[i]];
+  }
+
+  if (withObject && withObject._events) {
+    var events = withObject._events;
+    for (var event in events) {
+      for (var i = 0, len = events[event].length; i < len; i++) {
+        destObject.on.call(destObject, event, events[event][i].bind(destObject));
+      }
     }
   }
 
@@ -43,5 +48,3 @@ function eventify(destObject) {
 };
 
 module.exports = eventify;
-
-

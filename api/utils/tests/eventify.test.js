@@ -26,11 +26,38 @@ o.spec('eventify', function () {
 
   o('Can define events on prototype', function (done) {
     var store = new Store();
-    store.on('increment', function (int) {
+
+    var fn = function (int) {
+
+      Store.prototype.count += int;
+      o(Store).equals(this);
+      o(Store.prototype.count).equals(10);
+
+      Store.off('increment', fn);
+
+      done();
+    };
+
+    Store.on('increment', fn);
+
+    Store.dispatch('increment', 10);
+  });
+
+  o('Can define combined events with other object', function (done) {
+    var store = new Store();
+
+    Store.on('increment', function (int) {
       this.count += int;
       o(store).equals(this);
       o(this.count).equals(10);
+    });
 
+    eventify(store, Store);
+
+    store.on('increment', function (int) {
+      this.count += int;
+      o(store).equals(this);
+      o(this.count).equals(20);
       done();
     });
 
@@ -56,7 +83,6 @@ o.spec('eventify', function () {
     });
 
     store.dispatch('increment', 10);
-
   });
 
   o('Can dispatch events', function (done) {
