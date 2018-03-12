@@ -29,18 +29,15 @@ Event.prototype = {
   }
 };
 
-/**
- * mixin will delegate all MicroEvent.js function in the destination object
- *
- * @param {Object} the object which will support MicroEvent
- */
 function eventify(destObject) {
   var props = ['on', 'off', 'dispatch'];
   for (var i = 0, len = props.length; i < len; i++) {
-    destObject[props[i]] = Event.prototype[props[i]];
+    if (typeof destObject === 'function') {
+      destObject.prototype[props[i]] = Event.prototype[props[i]];
+    } else {
+      destObject[props[i]] = Event.prototype[props[i]];
+    }
   }
-
-  destObject._events = destObject._events || {};
 
   return destObject;
 };

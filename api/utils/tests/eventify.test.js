@@ -8,7 +8,14 @@ o.spec('eventify', function () {
     count: 0
   };
 
+  function Store() {
+    this.count = 0;
+  }
+
+  Store.prototype.count = 0;
+
   eventify(store);
+  eventify(Store);
 
   o('Can attach event system', function () {
     o(typeof store.on).equals('function');
@@ -17,11 +24,39 @@ o.spec('eventify', function () {
     o(typeof store._events).equals('object');
   });
 
-  o('Can define events', function () {
+  o('Can define events on prototype', function (done) {
+    var store = new Store();
+    store.on('increment', function (int) {
+      this.count += int;
+      o(store).equals(this);
+      o(this.count).equals(10);
+
+      done();
+    });
+
+    store.dispatch('increment', 10);
+  });
+
+  o('Can define events on object', function () {
     store.on('increment', function () {
     });
 
     o(store._events.increment.length).equals(1);
+  });
+
+  o('Can define events on instance', function (done) {
+    var store = new Store();
+    eventify(store);
+    store.on('increment', function (int) {
+      this.count += int;
+      o(store).equals(this);
+      o(this.count).equals(10);
+
+      done();
+    });
+
+    store.dispatch('increment', 10);
+
   });
 
   o('Can dispatch events', function (done) {
