@@ -29,9 +29,10 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in flow and lifecycle (root/sibling, manual/auto, up to down/down to up (phase))
 * Built-in methods, utils and properties
 * Built-in package, build, bundler system
+* Built-in manipulation system
 * Built-in envrinment system
 * Built-in loader system (such as webpack, parcel or rollup)
-* Structure can be done by a deporting system, global system, sub bricks system, clojure, polymorphism, sugar syntax.
+* Structure can be done by a deporting system, global system, sub bricks system, clojure, polymorphism, sugar, alias syntax.
 * Defined Brick structure
 * Built-in documentation system using brickyll.js (Same as jekyll but written in JavaScript)
 * Built-in unit tests system using ospec.js
