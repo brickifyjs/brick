@@ -8,6 +8,8 @@
 
 > Please come back frequently to see news.
 
+> A major reset commit will be released for end of April.
+
 __Brick.js is a LOW LEVEL API.__
 
 > Create, pack, diff, repack, unpack, destroy, move and link objects for creating any library, framework or JavaScript application.
