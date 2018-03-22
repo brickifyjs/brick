@@ -40,6 +40,7 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in unit tests system using ospec.js
 * Built-in unit functionnal tests system using casper.js
 * Built-in benchmark system using branchmarks.js
+* Built-in coverage with instanbul.js
 
 
 Easily extensible and overridable
