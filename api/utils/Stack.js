@@ -61,7 +61,7 @@ function Stack(stacks, methodName, ctx) {
 Stack.prototype.next = function nextStack() {
   var args = Array.prototype.slice.call(arguments);
 
-  if (this.currentStack === this.stacks.length - 1) {
+  if (this.currentStack === this.stacks.length - 1 || !this.stacks.length) {
     return this.parentStack && this.parentStack.next.apply(this.parentStack, args) || args[0];
   }
 
@@ -76,12 +76,20 @@ Stack.prototype.next = function nextStack() {
  * @returns {any} - Apply the current stack.
  * */
 Stack.prototype.run = function runStack(args) {
+
   if (this.stacks[this.currentStack] instanceof Stack) {
     this.stacks[this.currentStack].parentStack = this;
+    this.stacks[this.currentStack].ctx = this.ctx;
+
     return this.stacks[this.currentStack].start.apply(this.stacks[this.currentStack], args);
   }
 
   args.unshift(this.next);
+
+
+  if (!this.stacks.length) {
+    return this.next.apply(this, args);
+  }
 
   return this.stacks[this.currentStack].apply(this.ctx, args);
 };
@@ -93,6 +101,7 @@ Stack.prototype.run = function runStack(args) {
 Stack.prototype.start = function startStack() {
   this.currentStack = 0;
   var args = Array.prototype.slice.call(arguments);
+
 
   return this.run(args);
 };

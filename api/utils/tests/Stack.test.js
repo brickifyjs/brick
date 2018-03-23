@@ -1,7 +1,7 @@
 'use strict';
 
 var o = require('ospec');
-var Stack = require('../Stack.js');
+var Stack = require('../Stack');
 
 o.spec('Stack', function () {
   o.spec('Can have different type of stacks', function () {

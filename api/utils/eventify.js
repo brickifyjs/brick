@@ -29,19 +29,13 @@ Event.prototype = {
   }
 };
 
-function eventify(destObject, withObject) {
+function eventify(destObject) {
+
+  destObject = destObject || this;
+
   var props = ['on', 'off', 'dispatch'];
   for (var i = 0, len = props.length; i < len; i++) {
     destObject[props[i]] = Event.prototype[props[i]];
-  }
-
-  if (withObject && withObject._events) {
-    var events = withObject._events;
-    for (var event in events) {
-      for (var i = 0, len = events[event].length; i < len; i++) {
-        destObject.on.call(destObject, event, events[event][i].bind(destObject));
-      }
-    }
   }
 
   return destObject;

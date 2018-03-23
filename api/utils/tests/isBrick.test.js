@@ -1,6 +1,7 @@
 'use strict';
 
 var o = require('ospec');
+var Brick = require('../../core/api');
 var isBrick = require('../isBrick');
 
 o.spec('isBrick', function () {
