@@ -1,0 +1,27 @@
+sudo: false
+
+# Only care about running tests against latest node
+language: node_js
+node_js:
+- node
+
+# Keep node_modules around, it speeds up builds & they don't change often
+cache:
+  directories:
+  - node_modules
+
+# Custom install step so the travis-only stuff doesn't need to be in package.json
+install:
+- npm install
+- npm install -g codecov
+
+# Run tests, lint, and coverage
+script:
+- npm run lint
+- npm run test
+- npm run coverage
+
+# Run scripts after build
+after_success:
+- npm run report-coverage
+- bash <(curl -s https://codecov.io/bash)
