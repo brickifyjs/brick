@@ -24,3 +24,5 @@ Brick[X] = function (subclassFactory) {
 
   return Brick;
 };
+
+module.exports = Brick;
