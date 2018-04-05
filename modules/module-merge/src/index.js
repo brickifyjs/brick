@@ -30,13 +30,13 @@ function lookup(sourceLength, targetLength, source, target, options) {
       } else if (!options.keepExistingValues && sourceType === targetType && sourceType === TYPE_OBJECT && !(target.hasOwnProperty(prop))) {
         source = target;
       } else {
-        source[prop] = merge(source[prop], target[prop], options);
+        source[prop] = doMerge(source[prop], target[prop], options);
       }
     }
   } else if (sourceLength < targetLength) {
     for (prop in target) {
       if (source.hasOwnProperty(prop)) {
-        source[prop] = merge(source[prop], target[prop], options);
+        source[prop] = doMerge(source[prop], target[prop], options);
       } else {
         source[prop] = target[prop];
       }
@@ -44,7 +44,7 @@ function lookup(sourceLength, targetLength, source, target, options) {
   } else if (sourceLength > targetLength) {
     for (prop in source) {
       if (target.hasOwnProperty(prop)) {
-        source[prop] = merge(source[prop], target[prop], options);
+        source[prop] = doMerge(source[prop], target[prop], options);
       } else if (!options.keepExistingValues) {
         delete source[prop];
       }
@@ -68,19 +68,9 @@ function objectLookup(source, target, options) {
   return lookup(sourceLength, targetLength, source, target, options);
 }
 
-function merge(source, target, options) {
+function doMerge(source, target, options) {
   var typeSource = getType(source);
   var typeTarget = getType(target);
-
-  options = INSTANCE_OBJECT.assign({
-    immutable: false,
-    keepExistingValues: true,
-    eraseMethods: true,
-    eraseValues: true,
-    eraseNotSameType: true,
-    eraseArray: false,
-    eraseObject: false
-  }, options || {});
 
   var originalSource = source;
 
@@ -113,6 +103,20 @@ function merge(source, target, options) {
   }
 
   return source;
+}
+
+function merge(source, target, options) {
+  var opts = INSTANCE_OBJECT.assign({
+    immutable: false,
+    keepExistingValues: true,
+    eraseMethods: true,
+    eraseValues: true,
+    eraseNotSameType: true,
+    eraseArray: false,
+    eraseObject: false
+  }, options || {});
+
+  return doMerge(source, target, opts);
 }
 
 module.exports = merge;

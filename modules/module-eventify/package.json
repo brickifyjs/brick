@@ -1,23 +1,20 @@
 {
-  "name": "@brickify/m-gobp",
-  "version": "2.0.1",
-  "description": "Find an object by giving it a path with or without context",
+  "name": "@brickify/m-eventify",
+  "version": "1.0.0",
+  "description": "Add event system to anything",
   "keywords": [
-    "brickifyjs",
+    "bricksjs",
     "module",
-    "object",
-    "path",
-    "string",
-    "context"
+    "event system"
   ],
   "author": "Nicolas RAIBAUD",
   "license": "MIT",
   "repository": "brickifyjs/core",
   "scripts": {
+    "generate-docs":"cp README.md docs/index.md",
     "test": "ospec",
     "lint": "eslint .",
     "coverage": "istanbul cover --print both ospec",
-    "generate-docs":"cp README.md docs/index.md",
     "report-coverage": "codecovs"
   },
   "main": "src/index.js",

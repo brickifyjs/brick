@@ -1,6 +1,13 @@
 'use strict';
 
-var getter = require('../core/getter');
+//var getter = require('../core/getter');
 
-module.exports = getter;
+/**
+ *
+ */
+function get(){
+
+}
+
+module.exports = get;
 

@@ -1,9 +1,10 @@
 'use strict';
 
 /**
- *
+ * prop, value, brick
  */
-function create(prop, value) {
+
+function create() {
 
 }
 
