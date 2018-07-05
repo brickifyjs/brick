@@ -104,15 +104,32 @@ Use with CommonJS, AMD module, global IIFE.
 👉 __Using EcmaScript 5__
 
 ```js
-var Foo = Brick.extends(function () {
+var Foo = B.extends(function () {
 });
 ```
 
 👉 __Using EcmaScript 6__
 
 ```js
-class Foo extends Brick {
+class Foo extends B {
 }
+```
+
+
+## Instantiate a new Brick
+
+👉 __Using EcmaScript 5__
+
+```js
+new Foo();
+b(Foo);
+```
+
+👉 __Using EcmaScript 6__
+
+```js
+new Foo();
+b(Foo);
 ```
 
 ## Middlewares
