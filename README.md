@@ -59,9 +59,9 @@ __Brick.js is a LOW LEVEL API.__
 * Built-in prevent stack system
 * Built-in diff system
 * Built-in merge system 
-* Built-in store system
+* Built-in store system ✅
 * Built-in config/props system
-* Built-in queueing system
+* Built-in pending system
 * Built-in flow and lifecycle (root/sibling, manual/auto, up to down/down to up (phase))
 * Built-in methods, utils and properties
 * Built-in package, build, bundler system
