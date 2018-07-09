@@ -121,14 +121,20 @@ class Foo extends B {
 👉 __Using EcmaScript 5__
 
 ```js
+// Using new operator
 new Foo();
+
+// Using b method
 b(Foo);
 ```
 
 👉 __Using EcmaScript 6__
 
 ```js
+// Using new operator
 new Foo();
+
+// Using b method
 b(Foo);
 ```
 
